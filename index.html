@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>L0 - Mastering CSS Display Properties</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+      color: #444;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    /* Block Element */
+    #block-element {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background-color: #d0eaff;
+      border: 2px solid #3399cc;
+      margin-bottom: 10px;
+    }
+
+    /* Inline Element */
+    #inline-element {
+      display: inline;
+      background-color: #ffe0e0;
+      padding: 5px;
+      color: #cc0000;
+      border: 1px dashed #cc0000;
+    }
+
+    /* Inline-Block Element */
+    #inline-block-element {
+      display: inline-block;
+      width: 150px;
+      height: 50px;
+      padding: 10px;
+      background-color: #e8ffe8;
+      border: 2px solid #33cc33;
+      margin-left: 10px;
+      vertical-align: middle;
+      text-align: center;
+    }
+
+    /* Hidden Element */
+    #hidden-element {
+      display: none;
+    }
+
+    .note {
+      font-style: italic;
+      font-size: 0.95em;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>L0 - Mastering CSS Display Properties</h1>
+
+  <div class="section">
+    <p><strong>Block Element:</strong></p>
+    <div id="block-element">I am a block-level element. I take full width and start on a new line.</div>
+  </div>
+
+  <div class="section">
+    <p><strong>Inline Element:</strong></p>
+    <span id="inline-element">I am inline</span>
+    <span>— I appear inline with this sentence.</span>
+  </div>
+
+  <div class="section">
+    <p><strong>Inline-Block Element:</strong></p>
+    <div id="inline-block-element">I am inline-block</div>
+    <span>— I sit inline but respect width and height.</span>
+  </div>
+
+  <div class="section">
+    <p><strong>None (Hidden) Element:</strong></p>
+    <p class="note">This element is hidden using <code>display: none</code> and is not visible on the page.</p>
+    <div id="hidden-element">You won't see me because I'm hidden.</div>
+  </div>
+
+</body>
+</html>
